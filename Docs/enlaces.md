@@ -1,7 +1,15 @@
 url_base = 'https://ts2.x1.europe.travian.com/'
 
 hacer funciones:
-    
+    - cola de construccion
+    - suba todos los recursos a un nivel determinado
+    - hacer aventuras
+
+que estructura sigue para hacer un post:
+url o ejecutar comando,
+ejemplo url: /start_adventure.php?from=list&kid=49758
+ejecutar js: jQuery("#goToAdventure49758 form").submit()
+
 recursos:
     dorf1.php
     lo ideal seria que fuera desde el id 1 hasta el 18, que comprobara que tipo de material es y lo guardara en un array o en un objeto.
