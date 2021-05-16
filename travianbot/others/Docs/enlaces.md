@@ -1,5 +1,23 @@
 url_base = 'https://ts2.x1.europe.travian.com/'
 
+materiales : id
+    wood = l1
+    clay = l2
+    iron = l3
+    cereal = l4
+
+produccion por hora : css selector
+    #production >tbody >tr > td.num
+
+tropas : css selector
+    #troops >tbody >tr > td.num
+
+tropas en movimiento : 
+        aventura = class adventure
+        refuerzos = class d1
+    tipo de tropas: #movements >tbody  >tr > td > .mov >span 
+    minutos : #movements >tbody  >tr > td > .dur_r >span (value)  
+
 hacer funciones:
     - cola de construccion
     - suba todos los recursos a un nivel determinado
