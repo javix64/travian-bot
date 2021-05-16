@@ -8,5 +8,5 @@ class MaterialsViewSet(viewsets.ModelViewSet):
     serializer_class = MaterialsSerializer
 
 class TroopsViewSet(viewsets.ModelViewSet):
-    queryset = Troops.objects.all().order_by('name')
+    queryset = Troops.objects.all().order_by('-attack')
     serializer_class = TroopsSerializer

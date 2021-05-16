@@ -9,4 +9,4 @@ class MaterialsSerializer(serializers.HyperlinkedModelSerializer):
 class TroopsSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Troops
-        fields = ('name','size')
+        fields = ('name','attack', 'defence_infantry', 'defence_cavalry', 'speed', 'carrying_capacity', 'crop_consumption', 'troops_size')
